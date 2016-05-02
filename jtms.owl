@@ -1,0 +1,114 @@
+// represents a node
+Class :NODE
+
+// represents a blank node
+Class :EMPTY_NODE
+	subClassOf
+		:NODE
+
+// represents a node that is considered to be IN
+Class :NODE_IN
+	subClassOf
+		:NODE
+	disjointWith
+		:NODE_OUT
+
+// represents a node that is considered to be OUT
+Class :NODE_OUT
+	subClassOf
+		:NODE
+	disjointWith
+		:NODE_IN
+
+// property that is used to say that a NODE has another NODE in it's IN_LIST
+ObjectProperty :IN_LIST
+	domain 	:NODE
+	range 	:NODE
+
+// property that is used to say that a NODE has another NODE in it's OUT_LIST
+ObjectProperty :OUT_LIST
+	domain 	:NODE
+	range	:NODE
+
+// Definition of obvious in nodes
+Class :OBVIOUS_IN
+	subClassOf 
+		:NODE_IN
+	types
+		intersection
+		[
+			Restriction
+			onProperty
+				:IN_LIST
+			allValuesFrom
+				:EMPTY_NODE
+		]
+		[
+			Restriction
+			onProperty
+				:OUT_LIST
+			allValuesFrom
+				:EMPTY_NODE
+		]
+
+// Definition of obvious out nodes
+Class :OBVIOUS_OUT
+	subClassOf
+		:NODE_OUT
+	types
+		intersection
+		[
+			Restriction
+			onProperty
+				:IN_LIST
+			maxCardinality
+				0
+		]
+		[
+			Restriction
+			onProperty 
+				:OUT_LIST
+			maxCardinality: 0
+		]
+
+// Definition of a IN NODE
+Class :NODE_IN
+	equivalentClass
+		intersection
+			[
+				Restriction
+				onProperty 
+					:IN_LIST
+				allValuesFrom
+					:NODE_IN
+			]
+			[
+				Restriction
+				onProperty
+					:OUT_LIST
+				allValuesFrom
+					:NODE_OUT
+			]
+
+// Definition of a OUT NODE
+Class :NODE_OUT
+	equivalentClass
+		union
+			[
+				Restriction
+				onProperty
+					:IN_LIST
+				someValuesFrom
+					:NODE_OUT
+			]
+			[
+				Restriction
+				onProperty
+					:OUT_LIST
+				someValuesFrom
+					:NODE_IN
+			]
+
+
+
+
