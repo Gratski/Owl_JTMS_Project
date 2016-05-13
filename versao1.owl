@@ -1,0 +1,420 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.jtms.com/jtms#"
+     xml:base="http://www.jtms.com/jtms"
+     xmlns:jtms="http://www.jtms.com/jtms#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.jtms.com/jtms">
+        <owl:versionIRI rdf:resource="http://www.jtms.com/jtms/0.0.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.jtms.com/jtms#hasJustification -->
+
+    <owl:ObjectProperty rdf:about="http://www.jtms.com/jtms#hasJustification">
+        <rdfs:domain rdf:resource="http://www.jtms.com/jtms#Node"/>
+        <rdfs:range rdf:resource="http://www.jtms.com/jtms#Justification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.jtms.com/jtms#hasList -->
+
+    <owl:ObjectProperty rdf:about="http://www.jtms.com/jtms#hasList">
+        <rdfs:domain rdf:resource="http://www.jtms.com/jtms#Justification"/>
+        <rdfs:range rdf:resource="http://www.jtms.com/jtms#List"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.jtms.com/jtms#hasListIN -->
+
+    <owl:ObjectProperty rdf:about="http://www.jtms.com/jtms#hasListIN">
+        <rdfs:subPropertyOf rdf:resource="http://www.jtms.com/jtms#hasList"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.jtms.com/jtms#Justification"/>
+        <rdfs:range rdf:resource="http://www.jtms.com/jtms#ListIN"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.jtms.com/jtms#hasListOUT -->
+
+    <owl:ObjectProperty rdf:about="http://www.jtms.com/jtms#hasListOUT">
+        <rdfs:subPropertyOf rdf:resource="http://www.jtms.com/jtms#hasList"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.jtms.com/jtms#Justification"/>
+        <rdfs:range rdf:resource="http://www.jtms.com/jtms#ListOUT"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.jtms.com/jtms#hasNode -->
+
+    <owl:ObjectProperty rdf:about="http://www.jtms.com/jtms#hasNode">
+        <rdfs:domain rdf:resource="http://www.jtms.com/jtms#List"/>
+        <rdfs:range rdf:resource="http://www.jtms.com/jtms#Node"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.jtms.com/jtms#Justification -->
+
+    <owl:Class rdf:about="http://www.jtms.com/jtms#Justification"/>
+    
+
+
+    <!-- http://www.jtms.com/jtms#JustificationINVALID -->
+
+    <owl:Class rdf:about="http://www.jtms.com/jtms#JustificationINVALID">
+        <rdfs:subClassOf rdf:resource="http://www.jtms.com/jtms#Justification"/>
+        <owl:disjointWith rdf:resource="http://www.jtms.com/jtms#JustificationVALID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.jtms.com/jtms#JustificationVALID -->
+
+    <owl:Class rdf:about="http://www.jtms.com/jtms#JustificationVALID">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.jtms.com/jtms#Justification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.jtms.com/jtms#hasListIN"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.jtms.com/jtms#ListIN_VALID"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.jtms.com/jtms#Justification"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.jtms.com/jtms#hasListOUT"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.jtms.com/jtms#ListOUT_VALID"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.jtms.com/jtms#Justification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.jtms.com/jtms#List -->
+
+    <owl:Class rdf:about="http://www.jtms.com/jtms#List"/>
+    
+
+
+    <!-- http://www.jtms.com/jtms#ListEMPTY -->
+
+    <owl:Class rdf:about="http://www.jtms.com/jtms#ListEMPTY">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.jtms.com/jtms#List"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.jtms.com/jtms#hasNode"/>
+                        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:cardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.jtms.com/jtms#List"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.jtms.com/jtms#ListIN -->
+
+    <owl:Class rdf:about="http://www.jtms.com/jtms#ListIN">
+        <rdfs:subClassOf rdf:resource="http://www.jtms.com/jtms#List"/>
+        <owl:disjointWith rdf:resource="http://www.jtms.com/jtms#ListOUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.jtms.com/jtms#ListIN_INVALID -->
+
+    <owl:Class rdf:about="http://www.jtms.com/jtms#ListIN_INVALID">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.jtms.com/jtms#ListIN"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.jtms.com/jtms#ListEMPTY"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.jtms.com/jtms#hasNode"/>
+                        <owl:someValuesFrom rdf:resource="http://www.jtms.com/jtms#NodeOUT"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.jtms.com/jtms#ListIN"/>
+        <owl:disjointWith rdf:resource="http://www.jtms.com/jtms#ListIN_VALID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.jtms.com/jtms#ListIN_VALID -->
+
+    <owl:Class rdf:about="http://www.jtms.com/jtms#ListIN_VALID">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.jtms.com/jtms#ListIN"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.jtms.com/jtms#hasNode"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.jtms.com/jtms#NodeOUT"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.jtms.com/jtms#ListIN"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.jtms.com/jtms#ListOUT -->
+
+    <owl:Class rdf:about="http://www.jtms.com/jtms#ListOUT">
+        <rdfs:subClassOf rdf:resource="http://www.jtms.com/jtms#List"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.jtms.com/jtms#ListOUT_INVALID -->
+
+    <owl:Class rdf:about="http://www.jtms.com/jtms#ListOUT_INVALID">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.jtms.com/jtms#ListOUT"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.jtms.com/jtms#ListEMPTY"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.jtms.com/jtms#hasNode"/>
+                        <owl:someValuesFrom rdf:resource="http://www.jtms.com/jtms#NodeIN"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.jtms.com/jtms#ListOUT"/>
+        <owl:disjointWith rdf:resource="http://www.jtms.com/jtms#ListOUT_VALID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.jtms.com/jtms#ListOUT_VALID -->
+
+    <owl:Class rdf:about="http://www.jtms.com/jtms#ListOUT_VALID">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.jtms.com/jtms#ListOUT"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.jtms.com/jtms#ListEMPTY"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.jtms.com/jtms#hasNode"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                                <owl:onClass rdf:resource="http://www.jtms.com/jtms#NodeIN"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.jtms.com/jtms#ListOUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.jtms.com/jtms#Node -->
+
+    <owl:Class rdf:about="http://www.jtms.com/jtms#Node"/>
+    
+
+
+    <!-- http://www.jtms.com/jtms#NodeIN -->
+
+    <owl:Class rdf:about="http://www.jtms.com/jtms#NodeIN">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.jtms.com/jtms#Node"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.jtms.com/jtms#hasJustification"/>
+                        <owl:someValuesFrom rdf:resource="http://www.jtms.com/jtms#JustificationVALID"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.jtms.com/jtms#Node"/>
+        <owl:disjointWith rdf:resource="http://www.jtms.com/jtms#NodeOUT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.jtms.com/jtms#NodeOUT -->
+
+    <owl:Class rdf:about="http://www.jtms.com/jtms#NodeOUT">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.jtms.com/jtms#Node"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.jtms.com/jtms#hasJustification"/>
+                                <owl:someValuesFrom rdf:resource="http://www.jtms.com/jtms#JustificationVALID"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.jtms.com/jtms#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.jtms.com/jtms#J_1 -->
+
+    <owl:Thing rdf:about="http://www.jtms.com/jtms#J_1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <hasListIN rdf:resource="http://www.jtms.com/jtms#L_IN_1"/>
+        <hasListOUT rdf:resource="http://www.jtms.com/jtms#L_OUT_1"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.jtms.com/jtms#L_IN_1 -->
+
+    <owl:Thing rdf:about="http://www.jtms.com/jtms#L_IN_1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.jtms.com/jtms#hasNode"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:cardinality>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.jtms.com/jtms#L_OUT_1 -->
+
+    <owl:Thing rdf:about="http://www.jtms.com/jtms#L_OUT_1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.jtms.com/jtms#hasNode"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:cardinality>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.jtms.com/jtms#N1 -->
+
+    <owl:Thing rdf:about="http://www.jtms.com/jtms#N1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <hasJustification rdf:resource="http://www.jtms.com/jtms#J_1"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.jtms.com/jtms#N2 -->
+
+    <owl:Thing rdf:about="http://www.jtms.com/jtms#N2">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.jtms.com/jtms#NodeIN"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.jtms.com/jtms#N3 -->
+
+    <owl:Thing rdf:about="http://www.jtms.com/jtms#N3">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.jtms.com/jtms#NodeOUT"/>
+    </owl:Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.jtms.com/jtms#Justification"/>
+            <rdf:Description rdf:about="http://www.jtms.com/jtms#List"/>
+            <rdf:Description rdf:about="http://www.jtms.com/jtms#Node"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.jtms.com/jtms#N1"/>
+            <rdf:Description rdf:about="http://www.jtms.com/jtms#N2"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi -->
+
