@@ -45,7 +45,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasListIN">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasList"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Justification"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#List"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#ListIN"/>
     </owl:ObjectProperty>
     
 
@@ -55,7 +55,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasListOUT">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasList"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Justification"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#List"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#ListOUT"/>
     </owl:ObjectProperty>
     
 
@@ -359,9 +359,19 @@
     
 
 
-    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#EMPTY -->
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de1 -->
 
-    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#EMPTY">
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de1">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <hasListIN rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de1_IN"/>
+        <hasListOUT rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de1_OUT"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de1_IN -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de1_IN">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type>
             <owl:Restriction>
@@ -374,11 +384,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#IN -->
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de1_OUT -->
 
-    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#IN">
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de1_OUT">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#ListIN"/>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
@@ -390,11 +399,199 @@
     
 
 
-    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#IN_INVALID -->
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de2 -->
 
-    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#IN_INVALID">
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de2">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#ListIN"/>
+        <hasListIN rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de2_IN"/>
+        <hasListOUT rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de2_OUT"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de2_IN -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de2_IN">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de2_OUT -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de2_OUT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de3 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de3">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <hasListIN rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de3_IN"/>
+        <hasListOUT rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de3_OUT"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de3_IN -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de3_IN">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de3_OUT -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de3_OUT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de4 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de4">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <hasListIN rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de4_IN"/>
+        <hasListOUT rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de4_OUT"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de4_IN -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de4_IN">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasNode rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N1"/>
+        <hasNode rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N3"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de4_OUT -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de4_OUT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de5 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de5">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <hasListIN rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de5_IN"/>
+        <hasListOUT rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de5_OUT"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de5_IN -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de5_IN">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasNode rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N2"/>
+        <hasNode rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N4"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de5_OUT -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de5_OUT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de6 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de6">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <hasListIN rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de6_IN"/>
+        <hasListOUT rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de6_OUT"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de6_IN -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de6_IN">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de6_OUT -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de6_OUT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
@@ -402,105 +599,312 @@
                 <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
             </owl:Restriction>
         </rdf:type>
-        <hasNode rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#NodeOUT"/>
+        <hasNode rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N7"/>
     </owl:Thing>
     
 
 
-    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1 -->
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de8 -->
 
-    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1">
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de8">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <hasListIN rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#IN_INVALID"/>
-        <hasListOUT rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#OUT"/>
+        <hasListIN rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de8_IN"/>
+        <hasListOUT rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de8_OUT"/>
     </owl:Thing>
     
 
 
-    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2 -->
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de8_IN -->
 
-    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2">
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de8_IN">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <hasListIN rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#IN"/>
-        <hasListOUT rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#EMPTY"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasNode rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N6"/>
+        <hasNode rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N7"/>
     </owl:Thing>
     
 
 
-    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J3 -->
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de8_OUT -->
 
-    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J3">
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de8_OUT">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <hasListIN rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#EMPTY"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
     </owl:Thing>
     
 
 
-    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N_1 -->
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de1 -->
 
-    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N_1">
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de1">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <hasJustification rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2"/>
+        <hasListIN rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de1_IN"/>
+        <hasListOUT rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de1_OUT"/>
     </owl:Thing>
     
 
 
-    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N_2 -->
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de1_IN -->
 
-    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N_2">
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de1_IN">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de1_OUT -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de1_OUT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasNode rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N7"/>
+        <hasNode rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N8"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de4 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de4">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <hasListIN rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de4_IN"/>
+        <hasListOUT rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de4_OUT"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de4_IN -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de4_IN">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasNode rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N9"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de4_OUT -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de4_OUT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasNode rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N8"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de8 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de8">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <hasListIN rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de8_IN"/>
+        <hasListOUT rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de8_OUT"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de8_IN -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de8_IN">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de8_OUT -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de8_OUT">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasNode rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N1"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N1 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N1">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasJustification"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Justification"/>
             </owl:Restriction>
         </rdf:type>
-        <hasJustification rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1"/>
+        <hasJustification rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de1"/>
+        <hasJustification rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de1"/>
     </owl:Thing>
     
 
 
-    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#NodeIN -->
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N2 -->
 
-    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#NodeIN">
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N2">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#NodeIN"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#NodeOUT -->
-
-    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#NodeOUT">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#NodeOUT"/>
-    </owl:Thing>
-    
-
-
-    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#OUT -->
-
-    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#OUT">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#ListOUT"/>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasNode"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasJustification"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Node"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Justification"/>
             </owl:Restriction>
         </rdf:type>
-        <hasNode rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#NodeOUT"/>
+        <hasJustification rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de2"/>
     </owl:Thing>
     
 
 
-    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#OUT_INVALID -->
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N3 -->
 
-    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#OUT_INVALID">
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N3">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#ListOUT"/>
-        <hasNode rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#NodeIN"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasJustification"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Justification"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasJustification rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de3"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N4 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N4">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasJustification"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Justification"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasJustification rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de4"/>
+        <hasJustification rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de4"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N5 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N5">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasJustification"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Justification"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasJustification rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de5"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N6 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N6">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasJustification"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Justification"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasJustification rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de6"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N7 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N7">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasJustification"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Justification"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N8 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N8">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#hasJustification"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Justification"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasJustification rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de8"/>
+        <hasJustification rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de8"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N9 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N9">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     </owl:Thing>
     
 
