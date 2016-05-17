@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1463489234873" name="http://www.jtms.com/jtms" uri="versao1.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1463489234873" name="duplicate:http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14" uri="versao2.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1463489234873" name="duplicate:http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14" uri="versao3.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1463489234873" name="duplicate:http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14" uri="versao4.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1463511995088" name="http://www.jtms.com/jtms" uri="versao1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1463511995088" name="duplicate:http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14" uri="owl_grupo18_jtms.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1463511995088" name="duplicate:http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14" uri="versao2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1463511995088" name="duplicate:http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14" uri="versao3.owl"/>
     </group>
 </catalog>

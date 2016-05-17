@@ -1151,23 +1151,10 @@
                 <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Justification"/>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#isSupportedBy"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#Justification"/>
-            </owl:Restriction>
-        </rdf:type>
         <hasJustification rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de1"/>
         <hasJustification rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de1"/>
         <isSupportedBy rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J1de1"/>
     </owl:Thing>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
-        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#N1"/>
-        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#isSupportedBy"/>
-        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/joaor/ontologies/2016/4/untitled-ontology-14#J2de1"/>
-    </rdf:Description>
     
 
 
